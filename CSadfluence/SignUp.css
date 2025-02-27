@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+  
+    
+    :root{
+        --font-style:karla;
+        --font-weight: 550;
+        
+    }
+    
+    body{
+        height: 100vh;
+    }
+    .company-name{
+        font-family: "Lily Script One", serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 30px;
+        color: #108A00;
+        padding-left: 50px;
+        padding-top: 15px;
+    }
+    .main-signUp-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        margin-top: 10rem;
+    }
+
+    .signUp-heading{
+        font-style: var(--font-style);
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    .creator-sponsor-button {
+        display: flex;
+        gap: 50px;
+    }
+
+    .choose-btn {
+        height: 200px;
+        width: 350px;
+        font-size: 25px;
+        padding-left:30px;
+        padding-top: 40px;
+        font-style: var(--font-style);
+        font-weight: var(--font-weight);
+        border: 1.2px solid#000000;
+        background-color: white;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 35px;
+        text-align: left;
+    }
+    
+    .icon-group {
+        margin-bottom: 14px;
+                  
+    }
+    .button-text{
+        margin-bottom: 20px;
+    }
+
+    .circles{
+        padding-left: 13rem;
+    }
+    
+    /* Hide green circle by default */
+    .green-circle {
+        display: none;
+    }
+    
+    /* Show green circle when button is active */
+    .active .black-circle {
+        display: none;
+    }
+    
+    .active .green-circle {
+        display: inline-block;
+    }
+    
+
+    .choose-text {
+        text-align: right; 
+        font-size: 25px;
+        font-style: var(--font-style);
+        font-weight: var(--font-weight);
+    }
+    
+    .choose-btn.active {
+        border: 2.5px solid black;
+        background-color: rgba(230, 233, 233, 0.518);
+    }
+
+
+    .signUp-button {
+         margin-top: 45px;
+    }
+    #join-btn {
+        text-decoration: none;
+        background-color: #108A00; 
+        color: white;
+        font-style: var(--font-style);
+        font-size: 25px;
+        font-weight: 500;
+        padding: 18px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+    
+    #join-btn:hover {
+        background-color: #19A806;
+        transform: scale(1.05);
+    }
+    
+    #join-btn:active {
+        transform: scale(0.98);
+    }
+    
+    .have-account{
+        font-style: var(--font-style);
+        margin-top: 40px;
+        font-size: 22px;
+    }
+
+    #Log-In{
+       font-style: var(--font-style);
+       color: #108A00;
+    }
+

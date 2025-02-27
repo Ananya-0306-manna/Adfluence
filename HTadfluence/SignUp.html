@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up for Adflunce|Brands or Creators</title>
+
+    <!---Link to CSS-->
+    <link rel="stylesheet" href="../CSadfluence/SignUp.css">
+
+    <!---Link to Favicon-->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header>
+       <div class="company-name">
+           Adfluence
+       </div>
+    </header>
+
+    <main class="main-signUp-body">
+
+       <div class="signUp-heading">
+            Join as a brand or creator
+        </div>
+
+       <div class="creator-sponsor-button">
+          <div>
+              <button class="choose-btn" id="sponsorBtn1" onclick="toggleButton('sponsorBtn1', 'creatorBtn2')">
+                  <div class="icon-group">
+                      <img class="sponsor-icon" height="35px" width="35px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACKklEQVR4nO2ZzUtWQRSHn6RVC0WyUAJXCZHQyjYpYq3UVeVeaB+tcxX4R4S7Phat/Fi5kMJNaIQi6CpsISol9uEnUmo1MXAEkde6M3Pue9637g/O6vI7d575uDNzLhQqVCireoFVwFVJrAI9pUCqCcJJrJQCOXpYLXKntbcAKaF64B7wHJgDvgCHwGvgLFUwIk3AEPDtD/O6P/EduYPcBjYyLNB94C3wCKirNJB+4EfEV+cTcL1SQNqkl2M/oTvAZWuQGlnMqfvBK2uQXsXNrdUS5LEiyKAlyKwiyEtLkC1FkEVLkM+KID6XGciyIsh7S5ARRZBJS5D7iiADliADiiAPLEFmFEEmLEEWFUGm/pXF/sQSpE8R5K4lyBnpyVSIYTlJm4Egd/CUo8q8dEio/goSEjfF+yIB5KHkuAP8ivCrgDwVb3uk31dWmiWH39mdFcgu0Cj+0Qi/r7h4XY0cDacFcnxUzsv9O6tvDagV73jGxro8QXxPXpAcHwJ8C+K5EtDrLk8QHxclx9cAzzvxtCa+W60a/xE4Jzn2AnxL4vFrbFuzGt8jD7Im8QW5Z8Al8d8KbMR3mVZIXctviiEL3re1G2V1AuuRt8JrVIBapOL+M2GOH8gx52h0yqoOYCwR4GT4XH563SgHgD+SvFFs/GkxDXTlAdAgI+DKHGOy0aqoLfBrph0r0oYk+c1q0xDCSWzKeSxaGr8MtGIuBST2aJ1HTKaAFCr0v+s3XXZTEzGgmbkAAAAASUVORK5CYII=" alt="under-computer">
+                      <img class="black-circle circles" height="32px" width="32px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADD0lEQVR4nO2aXUuUURDHf6C5gSa+1HaZd4VQ2ncIJTDswkL0Myjit8gVTZQus09QZkn1DSKiwKjVtaterpKgukk32jgwCzHNaZ999nmePSv+4cC+zDNnZufMzP8MC8c4uugFxoECsAXsAF+BA1nudVG+K4hsD4EgB0wDT4FfQKXO5Z55AkyJrsxxEpgHPscw3rc+AXOiOxNcBd4n6IBee8Bomg64X+pODSNeAYvABHBJ8uaErF75bEJkXtfQtZbGcTsLvPRs+A24BZyPofcCsCA6LN0vgHxSTgxIuPUmh1J9kqg8vRKlQ2OfktjQcCQsJ97KMUkaQ8A7jzP5RnLCOk73gU7SQyfwwHPMYuWMldh3gTbSRxuwbuy/GqfEWpHIwokq3F4bhh0jRIQL36562L0/RfboNHJmL2rTnDeqUxqJHRXDQFnZNBslGpp2uDrfbCwpmz7WSvxpo9mFwFD7gO/Ktsn/PfBMCbuOHQoWlW3uOuDtrpqKx6EdaWFQ2ebyptsSvG4QwNCwrWy8FiV07n1oWIpSiB4rIUe3Q8NNZeMjS6ikhC4SHoaUjW4u8A/2lZAreaHhtLLxiyV0oIQ6CA85ZePPI+3IvhLqp0WP1m4LJnvxqJTfTUuo0AINcTkKFxxXQm7uFBreKBvHLKEegzS6uVOopPHQRxqRYXRolyofF3Q57cWUcbFy9L7Z6Ad+1HOxyslUPLSkv61s+hClYc8ZZ9HV72bhsjF8mInyYE5YZajjoFI9E8dR9XBFxphZDujagYfKht/AlXoVrRnOrGfkTDtwz9h/JY6ynAyOtTI3xuwiPXQZkXDreSOMPG/cHKtkzU0A00jsHWM/l6NnGlU+4HGmLMOAvoT6hCuxZY8T50gIec8xq8gEsCAUol4MSp/Sza7y13FqOBJWzqx6NqyubYnSDek9fXKuO+RXHxYqvmwQQF2dVtK+pY54jlpSaydOiW0kOrMyFU/KAUc7Zpr1D4gOIW9bnkSttcrCYidDGnZ0yyx2QSaARRloVP9Usy90Y1NudmNNoj3HIAv8AQueC0fLPOrbAAAAAElFTkSuQmCC" alt="circled"> 
+                      <img class="green-circle circles" height="35px" width="35px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVR4nN1VvW4TQRAehcycIn4KELpdAx1VwlMAJSKJwEG8ApiEnwdIhTERL5A2CTtjV1S0dAGKYCQMBAhdqKjANKTAaPZ2L6fYZ1sps9JIe/vzfTPfzM4BHOkx3QKqMN4yTM4wbluhP2o617W0iQt65lDgRuiGFfxuhXrDDXeso/nxkVtwzDI+ywGYPlimpdThTLoGx705nNE1v7dPtALLMDESP4Ibpr9GJu8MveSdSWp6NruDT8eQJQNPXXJZ1y6+hMQ6WrRCb2IO/JyTWtS/wsmVSGKF5gaC6+GoufccAM63ps4Zpvdl+humtp7xkUtyL0TxbWDitVqi5hq6eh7BjeBP08S6Eap6c/jYMO5me/TOA6pcQp2wVu2Xh4k9gaNF71EmS0/BrcPbKdO1ouma3xPqpS656zEcPQiRbQzQH7/4zRZNZ8mmt/67ifWD4NGMw0aI+rXeSQUvBZm2+wgsU1c3z7bgRPHbCFXLCFKHC4Hgt9458wJOhu9uKYEeGpuA87x5gtPrcCoUwK/REmVl2dOElkrUxHrQfHOkREboeWC/f6Dsdock+UexrI3Qo4Cx1kegjStsdgpl2s7L1GFDNVfLSjaAM23lZcr4MYuabpY9tJ1M06RWeGjtIQ9t64KbqoScLQVnvsIqYB+BP+RoPrYKff45cdZvNn3imbo6V1nyViHJVSu0Z5n+VRxdHwiekwiuRBLNg4ZeevgVTAbP94L3T2DkWIYJ7YoFKTr6QrVC9I2o6dwwPYyaq+dGsDFWu96PhOa0cY364ajmlmkWDjVWAX1zY9owgp9jDqzgJ8u07qulLKFHZvwHBuOscNqI8QUAAAAASUVORK5CYII=" alt="final-state">
+                  </div>
+                  <div class="button-text">
+                     <span class="choose-text">I’m a brand </br> looking for </br>creators
+                      </span>
+                  </div>
+              </button>
+          </div>
+          <div>
+              <button class="choose-btn" id="creatorBtn2" onclick="toggleButton('creatorBtn2', 'sponsorBtn1')">
+                  <div class="icon-group">
+                      <img class="creator-icon" height="35px" width="35px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7UlEQVR4nO2Yv0oDQRDGf9pYJv6JffxT2Qu+QAqxMUZQtNBCrdUihSJXihgtxKjPoViktFLwDRJFn8BKRBFODubgOGLIupvbW7wPpsrO5Pt2Z25mFzK4iRlgB6gq2CrQZ5t4HrgF/D/aim0BtxrkA/Nsp43vsoBdAwKCurEGz4CAaZcF3GAZixrkr+ULZh1l4FDBtmNpk8NRDAGnwIFNElvAhWL3PZHcf0/DZ9RzvQ94mQCyTqyFBQMpNI9F5IEvDfKfaegDlxoCzkkBCsDLH8gHPiOkBFOKIl7ExyoGgYrM80tyEheS151yvi5rl8W3kvRQNwpctSnePfk9JwPedmyAK0cKdj/m+yW1FAjrKYJjf/1ld7+BUhcxSrI28dQqdCAf2hsw2yHGnKzpFOMZGO6FgCuFIr2XqTM6gT4o+Nd7UbA6DaudBfEaQK3NpccD+k0KqBgmfwdM4NjziR8hPyBxx4BNxQtRVXyKSc/9YdqEO78OfGjE+gDWkhbQiOy8Dnk/IqKYpICjyF3aVEpuJCnAMxzP7/ZGlwngn51AExgXa7oo4Djy3zUXBTSlX0wCLRcF+K7XgJ8JiGHT9RMYMzS7nBneEL/bUQKZ/HRFPEqs4BXiyQD5lurLXlEUH2pY+JiV04y1kYZnyQy0wQ9tPtzdDPsX3gAAAABJRU5ErkJggg==" alt="external-content-creator-content-creator-tanah-basah-glyph-tanah-basah-2">
+                      <img class="black-circle circles" height="32px" width="32px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADD0lEQVR4nO2aXUuUURDHf6C5gSa+1HaZd4VQ2ncIJTDswkL0Myjit8gVTZQus09QZkn1DSKiwKjVtaterpKgukk32jgwCzHNaZ999nmePSv+4cC+zDNnZufMzP8MC8c4uugFxoECsAXsAF+BA1nudVG+K4hsD4EgB0wDT4FfQKXO5Z55AkyJrsxxEpgHPscw3rc+AXOiOxNcBd4n6IBee8Bomg64X+pODSNeAYvABHBJ8uaErF75bEJkXtfQtZbGcTsLvPRs+A24BZyPofcCsCA6LN0vgHxSTgxIuPUmh1J9kqg8vRKlQ2OfktjQcCQsJ97KMUkaQ8A7jzP5RnLCOk73gU7SQyfwwHPMYuWMldh3gTbSRxuwbuy/GqfEWpHIwokq3F4bhh0jRIQL36562L0/RfboNHJmL2rTnDeqUxqJHRXDQFnZNBslGpp2uDrfbCwpmz7WSvxpo9mFwFD7gO/Ktsn/PfBMCbuOHQoWlW3uOuDtrpqKx6EdaWFQ2ebyptsSvG4QwNCwrWy8FiV07n1oWIpSiB4rIUe3Q8NNZeMjS6ikhC4SHoaUjW4u8A/2lZAreaHhtLLxiyV0oIQ6CA85ZePPI+3IvhLqp0WP1m4LJnvxqJTfTUuo0AINcTkKFxxXQm7uFBreKBvHLKEegzS6uVOopPHQRxqRYXRolyofF3Q57cWUcbFy9L7Z6Ad+1HOxyslUPLSkv61s+hClYc8ZZ9HV72bhsjF8mInyYE5YZajjoFI9E8dR9XBFxphZDujagYfKht/AlXoVrRnOrGfkTDtwz9h/JY6ynAyOtTI3xuwiPXQZkXDreSOMPG/cHKtkzU0A00jsHWM/l6NnGlU+4HGmLMOAvoT6hCuxZY8T50gIec8xq8gEsCAUol4MSp/Sza7y13FqOBJWzqx6NqyubYnSDek9fXKuO+RXHxYqvmwQQF2dVtK+pY54jlpSaydOiW0kOrMyFU/KAUc7Zpr1D4gOIW9bnkSttcrCYidDGnZ0yyx2QSaARRloVP9Usy90Y1NudmNNoj3HIAv8AQueC0fLPOrbAAAAAElFTkSuQmCC" alt="circled"> 
+                      <img class="green-circle circles" height="35px" width="35px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVR4nN1VvW4TQRAehcycIn4KELpdAx1VwlMAJSKJwEG8ApiEnwdIhTERL5A2CTtjV1S0dAGKYCQMBAhdqKjANKTAaPZ2L6fYZ1sps9JIe/vzfTPfzM4BHOkx3QKqMN4yTM4wbluhP2o617W0iQt65lDgRuiGFfxuhXrDDXeso/nxkVtwzDI+ywGYPlimpdThTLoGx705nNE1v7dPtALLMDESP4Ibpr9GJu8MveSdSWp6NruDT8eQJQNPXXJZ1y6+hMQ6WrRCb2IO/JyTWtS/wsmVSGKF5gaC6+GoufccAM63ps4Zpvdl+humtp7xkUtyL0TxbWDitVqi5hq6eh7BjeBP08S6Eap6c/jYMO5me/TOA6pcQp2wVu2Xh4k9gaNF71EmS0/BrcPbKdO1ouma3xPqpS656zEcPQiRbQzQH7/4zRZNZ8mmt/67ifWD4NGMw0aI+rXeSQUvBZm2+wgsU1c3z7bgRPHbCFXLCFKHC4Hgt9458wJOhu9uKYEeGpuA87x5gtPrcCoUwK/REmVl2dOElkrUxHrQfHOkREboeWC/f6Dsdock+UexrI3Qo4Cx1kegjStsdgpl2s7L1GFDNVfLSjaAM23lZcr4MYuabpY9tJ1M06RWeGjtIQ9t64KbqoScLQVnvsIqYB+BP+RoPrYKff45cdZvNn3imbo6V1nyViHJVSu0Z5n+VRxdHwiekwiuRBLNg4ZeevgVTAbP94L3T2DkWIYJ7YoFKTr6QrVC9I2o6dwwPYyaq+dGsDFWu96PhOa0cY364ajmlmkWDjVWAX1zY9owgp9jDqzgJ8u07qulLKFHZvwHBuOscNqI8QUAAAAASUVORK5CYII=" alt="final-state">
+                 </div>
+                 <div class="button-text">
+                     <span class="choose-text">I’m a creator </br> looking for </br> sponsorships
+                     </span>
+                 </div>
+             </button>
+          </div>
+
+          <!--     -->
+        </div>
+
+        <div class="signUp-button">
+           <a id="join-btn" href="#">Create Account</a>
+        </div> 
+
+        <div class="have-account">
+           <span>Already have an account? <a id="Log-In" href="#logIn">Log In</a></span>
+        </div>
+    </main>
+
+    <script src="../JSadfluence/SignUp.js"></script>
+
+</body>
+</html>
