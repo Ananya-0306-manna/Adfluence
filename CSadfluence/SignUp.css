@@ -100,7 +100,7 @@
     }
 
 
-    .signUp-button {
+    .signup-button {
          margin-top: 45px;
     }
     #join-btn {
@@ -119,16 +119,22 @@
     
     #join-btn:hover {
         background-color: #19A806;
-        transform: scale(1.05);
     }
     
     #join-btn:active {
         transform: scale(0.98);
     }
+
+    .error-message {
+        color: red;
+        font-size: 15px;
+        margin-top: 7px;
+        display: block;
+    }
     
     .have-account{
         font-family: var(--font-family);
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 22px;
     }
 
