@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
   
     
     :root{
-        --font-style:karla;
+        --font-family:karla;
         --font-weight: 550;
+        --heading-font-weight:600;
         
     }
     
@@ -29,8 +32,8 @@
     }
 
     .signUp-heading{
-        font-style: var(--font-style);
-        font-weight: 600;
+        font-family: var(--font-family);
+        font-weight: var(--heading-font-weight);
         font-size: 40px;
         margin-bottom: 40px;
     }
@@ -47,8 +50,8 @@
         font-size: 25px;
         padding-left:30px;
         padding-top: 40px;
-        font-style: var(--font-style);
-        font-weight: var(--font-weight);
+        font-family: var(--font-family);
+        font-weight: var(--heading-font-weight);
         border: 1.2px solid#000000;
         background-color: white;
         cursor: pointer;
@@ -87,8 +90,8 @@
     .choose-text {
         text-align: right; 
         font-size: 25px;
-        font-style: var(--font-style);
-        font-weight: var(--font-weight);
+        font-family: var(--font-family);
+        font-weight: var(--heading-font-weight);
     }
     
     .choose-btn.active {
@@ -104,8 +107,8 @@
         text-decoration: none;
         background-color: #108A00; 
         color: white;
-        font-style: var(--font-style);
-        font-size: 25px;
+        font-family: var(--font-family);
+        font-size: 22px;
         font-weight: 500;
         padding: 18px 30px;
         border: none;
@@ -124,13 +127,13 @@
     }
     
     .have-account{
-        font-style: var(--font-style);
+        font-family: var(--font-family);
         margin-top: 40px;
         font-size: 22px;
     }
 
     #Log-In{
-       font-style: var(--font-style);
+        font-family: var(--font-family);
        color: #108A00;
     }
 

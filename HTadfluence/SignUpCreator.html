@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Content Creator</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../CSadfluence/SignUpCreator.css">
 </head>
 <body>
@@ -13,15 +13,52 @@
         <div class="company-name">
             Adfluence
         </div>
-     </header>
+    </header>
 
     <main class="creator-details">
-        <div class="sign-up-creator-heading">
-            Sign up to get sponsorships you deserve
-        </div>
+        <div class="signup-container">
+            <h1 class="sign-up-creator-heading">Sign up to get sponsorships you deserve</h1>
+        
 
-        <div>
-            
+        <!-- <div class="signup-container"> -->
+    
+           <form id="signupForm">
+              <div class="form-group">
+                   <label for="fullName">Full Name</label>
+                   <input type="text" id="fullName" required>
+              </div>
+
+              <div class="form-group">
+                   <label for="email">Email</label>
+                   <input type="email" id="email"  required>
+              </div>
+
+              <div class="form-group">
+                   <label for="password">Password</label>
+                   <div class="password-wrapper">
+                      <input type="password" id="password" placeholder="Password(8 or more characters)" required oninput="validatePassword(); checkPasswordMatch()">
+                      <span class="toggle-password" onclick="togglePassword('password', 'eyeIcon1')">
+                         <i id="eyeIcon1" class="fa fa-eye-slash"></i>
+                      </span>
+                   </div>
+                   <span id="passwordRequirements" class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                   <label for="confirmPassword">Confirm Password</label>
+                   <input type="password" id="confirmPassword" required oninput="checkPasswordMatch()">
+                   <span id="passwordMismatch" class="error-message"></span> <!-- Warning message -->
+              </div>
+
+              <button type="submit" class="account-button"> 
+              <a id="create-account" href="#">Create my account</a>
+              </button>
+              <p class="error-message" id="errorMessage"></p>
+            </form>
+
+            <div class="have-account">
+                <span>Already have an account? <a id="Log-In" href="#logIn">Log In</a></span>
+            </div>
         </div>
     </main>
 
